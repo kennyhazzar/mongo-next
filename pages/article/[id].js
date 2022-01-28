@@ -6,6 +6,7 @@ import Layout from "../../components/Layout"
 const ArticleById = props => {
     const router = useRouter()
     const [data, setData] = useState("Идет загрузка, подождите...")
+    const [error, setError] = useState(false)
 
     const fetchArticle = useCallback(
         async () => {
